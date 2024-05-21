@@ -1,0 +1,71 @@
+<div class="form-group has-float-label">
+    <span for="inputAddress">Calle</span>
+    <input type="text" autocomplete="off" class="form-control" name="Calle" [(ngModel)]="direccion.Calle">
+</div>
+
+<div class="form-row">
+    <div class="form-group has-float-label col-md-4">
+        <span for="inputCity">No.Exterior</span>
+        <input type="text" autocomplete="off" class="form-control" name="NoExterior" [(ngModel)]="direccion.NoExterior">
+    </div>
+    <div class="form-group has-float-label col-md-4">
+        <span for="inputState">No.Interior</span>
+        <input type="text" autocomplete="off" class="form-control" name="NoInterior" [(ngModel)]="direccion.NoInterior">
+    </div>
+
+    <div class="form-group col-md-4">
+        <div class="input-group mb-3">
+            <div class="form-group has-float-label">
+                <span for="inputState">C.P.</span>
+                <input type="text" autocomplete="off" class="form-control" name="Cp" [(ngModel)]="direccion.Cp">
+            </div>
+            <div class="input-group-append">
+                <button class="btn btn-sm btn-outline-primary" (click)="buscar()" type="button">Buscar</button>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<div class="form-row">
+
+    <label class="form-group has-float-label col-md-4">
+
+        <ng-select [items]="codigos.colonias" bindLabel="Dasenta" (change)="colonia($event)" 
+        bindValue="Dasenta" name="colonia" [(ngModel)]="direccion.Colonia" [addTag]="true">
+                                </ng-select>
+        <span>Colonia</span>
+    </label>
+
+    <label class="form-group has-float-label col-md-4">
+        <ng-select [items]="codigos.delegaciones" bindLabel="Dmnpio" (change)="delegacion($event)"
+            bindValue="Dmnpio" name="Dmnpio" [(ngModel)]="direccion.Municipio" [addTag]="true">
+        </ng-select>
+        <span>Del. / Municipio</span>
+    </label>
+
+    <label class="form-group has-float-label col-md-4">
+        <ng-select [items]="codigos.ciudades" bindLabel="Dciudad" (change)="ciudad($event)"
+            bindValue="Dciudad" name="Dciudad" [(ngModel)]="direccion.Localidad" [addTag]="true">
+        </ng-select>
+        <span>Localidad</span>
+    </label>
+
+</div>
+
+<div class="form-row">
+    <label class="form-group has-float-label col-md-6">
+        <ng-select [items]="codigos.estados" bindLabel="Destado" (change)="estado($event)"
+            bindValue="Destado" name="Destado" [(ngModel)]="direccion.Estado" [addTag]="true">
+        </ng-select>
+        <span>Estado</span>
+    </label>
+
+      <div class="form-group has-float-label col-md-6">
+        <span for="Pais">Pais</span>
+        <input type="text" autocomplete="off" class="form-control" name="Pais" [(ngModel)]="direccion.Pais">
+    </div>
+
+</div>

@@ -1,0 +1,2 @@
+<input class="form-control" (ngModelChange)="change($event)" [ngModel]="myModel | currencyPipe:decimal "
+    [ngModelOptions]="{updateOn:'blur'}" type="text" style="text-align: right;" />

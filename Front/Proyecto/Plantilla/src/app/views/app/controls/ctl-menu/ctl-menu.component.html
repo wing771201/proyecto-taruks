@@ -1,0 +1,35 @@
+<div>
+    <div style="text-align: right;" *ngIf="ismobile">
+        <div class="btn-group" dropdown placement="bottom left">
+            <button id="button-alignment" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
+                aria-controls="dropdown-alignment">Menú<span class="caret"></span>
+            </button>
+            <ul id="dropdown-alignment" *dropdownMenu class="dropdown-menu dropdown-menu-right" role="menu"
+                aria-labelledby="button-alignment">
+                <div *ngFor="let action of menuDes">
+                    <li role="menuitem" *ngIf="action.mostrar" (click)="eventMenu(action.evento)"><a
+                            class="dropdown-item">{{action.nombre}}</a></li>
+                </div>
+            </ul>
+        </div>
+
+    </div>
+    <br>
+</div>
+
+<body *ngIf="!ismobile">
+    <div id="wrapper">
+        <ul>
+            <div *ngFor="let action of menuDes">
+                <li (click)="eventMenu(action.evento)" *ngIf="action.mostrar"><a>
+                        <img *ngIf="action.img" alt="thumb" [src]="action.img"
+                            class="responsive border-0 border-radius img-fluid" />
+                            
+                        <i *ngIf="!action.img" class="{{action.icon}}"> </i>
+                        <div>{{action.nombre}}</div>
+                    </a>
+                </li>
+            </div>
+        </ul>
+    </div>
+</body>

@@ -1,0 +1,85 @@
+<div class="row">
+  <div class="col-12">
+    <h1>Usuarios</h1>
+    <div class="separator mb-5"></div>
+  </div>
+</div>
+<div class="card mb-12">
+  <div class="card-body">
+
+    <app-ctl-menu (Event)="menu($event)"></app-ctl-menu>
+
+    <app-ctl-table (menuEvent)="menu($event)" (messageEvent)="receiveMessage($event)" [rowData]="rowData"
+      [columnDefs]="columnDefs">
+    </app-ctl-table>
+
+  </div>
+</div>
+
+<div bsModal #smModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="dialog-sizes-name2"
+  [config]="{backdrop:'static',keyboard:false}">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="dialog-sizes-name2" class="modal-title pull-left">Usuario</h2>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="smModal.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+
+        <label class="form-group has-float-label">
+          <ng-select [items]="perfiles" bindLabel="Nombre" bindValue="IdPerfil" (change)="perfil($event)" name="Perfil"
+            [(ngModel)]="usuario.IdPerfil">
+          </ng-select>
+          <span>Perfil</span>
+        </label>
+
+
+
+        <div class="form-group has-float-label">
+          <span for="inputAddress">Nombre de usuario</span>
+          <input type="text" autocomplete="off" class="form-control" name="LoginUser"
+            [(ngModel)]="usuario.NombreUsuario">
+        </div>
+
+        <div class="form-group has-float-label">
+          <span for="inputAddress">Clave de acceso</span>
+          <input type="text" autocomplete="off" class="form-control" name="LoginPassword"
+            [(ngModel)]="usuario.Contrasena">
+        </div>
+
+
+        <div class="form-group has-float-label">
+          <span for="inputAddress">Nombre completo</span>
+          <input type="text" autocomplete="off" class="form-control" name="Nombre" [(ngModel)]="usuario.Nombre">
+        </div>
+
+
+        <div class="form-group has-float-label">
+          <span for="inputAddress">Correo</span>
+          <input type="text" autocomplete="off" class="form-control" name="Correo" [(ngModel)]="usuario.Correo">
+        </div>
+
+        <div class="form-row">
+          <div class="form-group  col-md-6">
+            <div class="custom-control custom-checkbox mb-4">
+              <input type="checkbox" class="custom-control-input" id="activo" [(ngModel)]="usuario.Activo"
+                name="activo">
+              <label class="custom-control-label" for="activo">Activo</label>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" (click)="guardar()">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>

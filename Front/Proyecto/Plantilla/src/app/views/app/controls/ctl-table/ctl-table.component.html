@@ -1,0 +1,25 @@
+<div class="form-group">
+    <ag-grid-angular [paginationPageSize]="15" [pagination]="pagination" style="width: 100%; height: 425px;"
+        class="ag-theme-balham" [rowData]="rowData" [columnDefs]="columnDefs" [localeText]="localeText"
+        (gridReady)="onGridReady($event)" [floatingFilter]="floatingFilter" [rowSelection]="rowSelection"
+        [defaultColDef]="defaultColDef" (rowDoubleClicked)="doubleClick()" [rowClassRules]="rowClassRules"
+        (selectionChanged)="onSelectionChanged()" [getRowStyle]="rowStyle"
+        (cellValueChanged)="onCellValueChanged($event)" (cellKeyDown)="onCellKeyPress($event)"
+        [pinnedBottomRowData]="pinnedBottomData" (rowDataChanged)="changeData($event)" 
+        [frameworkComponents]="frameworkComponents"
+        [contextMenu]="basicMenu"
+        (cellMouseOver)="mouseContext(true)"
+        (cellMouseOut)="mouseContext(false)"
+        (cellContextMenu)="eventClickContext($event)"
+        (filterChanged)="onFilterChanged($event)"
+        (onSortChanged)="onFilterChanged($event)"
+        (rowDataChanged)="okTable($event)"
+        >
+    </ag-grid-angular>
+</div>
+
+
+<context-menu [disabled]="demostrateContext()">
+    <ng-template *ngFor="let action of menusContext"  contextMenuItem (execute)="contextMenuOption(action.clave)">{{action.descripcion}}
+    </ng-template>
+</context-menu>

@@ -1,0 +1,25 @@
+<div class="modal-header lg" data-backdrop="static" data-keyboard="false">
+    <h5 class="modal-title">Filtrar</h5>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.close()">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+
+    <div class="form-group has-float-label">
+        <span for="INicio">Inicio</span>
+        <input type="date" class="form-control" name="INicio" [ngModel]="inicio | date:'yyyy-MM-dd'"
+            (ngModelChange)="cambiarInicio($event)">
+    </div>
+
+    <div class="form-group has-float-label">
+        <span for="final">Final</span>
+        <input type="date" class="form-control" name="final" [ngModel]="final | date:'yyyy-MM-dd'"
+            (ngModelChange)="cambiarFinal($event)">
+    </div>
+
+</div>
+
+<div class="modal-footer">
+    <button class="btn btn-primary" (click)="Buscar()">Aceptar</button>
+</div>

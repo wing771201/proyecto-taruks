@@ -1,0 +1,17 @@
+<div class="modal-header lg" data-backdrop="static" data-keyboard="false">
+  <h3 class="modal-title">Visor de documento: {{titulo}}</h3>
+  <button type="button" class="close" aria-label="Close" (click)="activeModal.close()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <app-ctl-menu (Event)="menu($event)" [email]="true" [descargarPdf]="true" [new]="false" [update]="false"
+    [delete]="false">
+  </app-ctl-menu>
+
+  <div style="height: 600px;width: 100%;">
+    <pdf-viewer [src]="pdfurl"  [fit-to-page]="true" [show-borders]="true"></pdf-viewer>
+
+  </div>
+
+</div>

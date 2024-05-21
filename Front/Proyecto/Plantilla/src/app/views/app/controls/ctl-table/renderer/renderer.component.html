@@ -1,0 +1,24 @@
+<button title="Ver historial" *ngIf="view" type="button" style="border-radius: 15px" class="btn btn-primary"
+    (click)="onClick($event)">
+    👁‍🗨
+</button>
+
+<button title="Editar" style="background-color:rgb(255, 255, 255);border-radius: 15px;" *ngIf="edit" type="button"
+    class="btn btn-primary" (click)="onClick($event)">
+    📘
+</button>
+
+<button title="Guardar" style="background-color:rgb(255, 255, 255);border-radius: 15px;" *ngIf="save" type="button"
+    class="btn btn-primary" (click)="onClick($event)">
+    ✔️
+</button>
+
+<button title="Eliminar" style="background-color:rgb(255, 255, 255);" *ngIf="delete" type="button"
+    class="btn btn-primary" (click)="onClick($event)">
+    ❌
+</button>
+
+<button *ngIf="!delete && !save && !view && !edit" style="border-radius: 15px;" type="button" class="btn btn-primary"
+    (click)="onClick($event)">
+    {{label}}
+</button>

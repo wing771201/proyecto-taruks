@@ -1,0 +1,131 @@
+<div class="card mb-4">
+  <div class="card-body">
+    <h2>Configuración</h2>
+
+    <tabset class="card-tabs">
+      <tab heading="Generales" class="card-body">
+
+
+
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <div class="form-row">
+              <div class="form-group has-float-label col-md-6">
+                <span>RFC</span>
+                <input type="text" autocomplete="off" class="form-control" name="Rfc" [(ngModel)]="sucursal.Rfc">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <div class="form-row">
+              <div class="form-group has-float-label col-md-6">
+                <span>Nombre</span>
+                <input type="text" autocomplete="off" class="form-control" name="Nombre" [(ngModel)]="sucursal.Nombre">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </tab>
+
+
+      <tab heading="Correo de salida" class="card-body">
+
+        <div class="form-row">
+          <div class="form-group has-float-label col-md-4">
+            <span for="Servidor">Servidor</span>
+            <input type="text" autocomplete="off" class="form-control" name="Servidor" [(ngModel)]="sucursal.CorreoServidor">
+          </div>
+          <!---
+        <div class="form-group has-float-label col-md-8">
+            <button class="btn btn-sm btn-outline-primary" for="file" (click)="Correopredeterminada()">
+                Config. Predeterminada
+            </button>
+        </div>-->
+        </div>
+        <div class="form-row">
+          <div class="form-group has-float-label col-md-1">
+            <span for="Puerto">Puerto</span>
+            <input type="number" class="form-control" name="Puerto" [(ngModel)]="sucursal.CorreoPuerto">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group has-float-label col-md-4">
+            <span for="Correo">Correo</span>
+            <input type="text" autocomplete="off" class="form-control" name="Correo" [(ngModel)]="sucursal.CorreoUsuario">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group has-float-label col-md-4">
+            <span for="Perfil">Perfil</span>
+            <input type="text" autocomplete="off" class="form-control" name="Perfil" [(ngModel)]="sucursal.CorreoEmail">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group has-float-label col-md-4">
+            <span for="Contraseña">Contraseña</span>
+            <input type="password" class="form-control" name="Contraseña" [(ngModel)]="sucursal.CorreoClave">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group has-float-label col-md-4">
+            <span for="CorreoRespuesta">Enviar respuestas al correo: </span>
+            <input type="text" autocomplete="off" class="form-control" name="CorreoResponderA"
+              [(ngModel)]="sucursal.CorreoResponderA">
+          </div>
+        </div>
+
+
+        <div class="form-row">
+          <div class="form-group  col-md-4">
+            <div class="custom-control custom-checkbox mb-4">
+              <input type="checkbox" class="custom-control-input" id="ssl" [(ngModel)]="sucursal.CorreoSsl"
+                name="CorreoSsl">
+              <label class="custom-control-label" for="ssl">Requiere SSL</label>
+            </div>
+          </div>
+          <div class="form-group  col-md-4">
+            <div class="custom-control custom-checkbox mb-4">
+              <input type="checkbox" class="custom-control-input" id="auth" [(ngModel)]="sucursal.CorreoAutenticacion"
+                name="CorreoAutenticacion">
+              <label class="custom-control-label" for="auth">Requiere autentificación</label>
+            </div>
+          </div>
+        </div>
+
+
+        <h2>Valores predeterminados para el envío de correo</h2>
+        <div class="form-row">
+          <div class="form-group has-float-label col-md-4">
+            <span for="Asunto">Asunto</span>
+            <input type="text" autocomplete="off" class="form-control" name="Asunto" [(ngModel)]="sucursal.CorreoAsunto">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group has-float-label col-md-4">
+            <span for="Mensaje">Mensaje</span>
+            <textarea class="form-control" name="Mensaje" [(ngModel)]="sucursal.CorreoMensaje"></textarea>
+          </div>
+        </div>
+
+
+
+      </tab>
+
+
+    </tabset>
+
+
+    <div class="modal-footer">
+      <button class="btn btn-primary" (click)="guardar()">Guardar</button>
+    </div>
+
+  </div>
+</div>

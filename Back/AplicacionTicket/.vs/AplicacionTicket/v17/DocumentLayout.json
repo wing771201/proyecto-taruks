@@ -1,0 +1,165 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Taruks\\Documents\\Net Core\\AplicacionTicket\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{19C7C8CD-9EDD-4F5C-A419-5CF03B7BEDCC}|AplicacionTicket\\AplicacionTicket.csproj|c:\\users\\taruks\\documents\\net core\\aplicacionticket\\aplicacionticket\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19C7C8CD-9EDD-4F5C-A419-5CF03B7BEDCC}|AplicacionTicket\\AplicacionTicket.csproj|solutionrelative:aplicacionticket\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19C7C8CD-9EDD-4F5C-A419-5CF03B7BEDCC}|AplicacionTicket\\AplicacionTicket.csproj|c:\\users\\taruks\\documents\\net core\\aplicacionticket\\aplicacionticket\\models\\tabla_negocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19C7C8CD-9EDD-4F5C-A419-5CF03B7BEDCC}|AplicacionTicket\\AplicacionTicket.csproj|solutionrelative:aplicacionticket\\models\\tabla_negocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19C7C8CD-9EDD-4F5C-A419-5CF03B7BEDCC}|AplicacionTicket\\AplicacionTicket.csproj|c:\\users\\taruks\\documents\\net core\\aplicacionticket\\aplicacionticket\\models\\tabla_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19C7C8CD-9EDD-4F5C-A419-5CF03B7BEDCC}|AplicacionTicket\\AplicacionTicket.csproj|solutionrelative:aplicacionticket\\models\\tabla_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19C7C8CD-9EDD-4F5C-A419-5CF03B7BEDCC}|AplicacionTicket\\AplicacionTicket.csproj|c:\\users\\taruks\\documents\\net core\\aplicacionticket\\aplicacionticket\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19C7C8CD-9EDD-4F5C-A419-5CF03B7BEDCC}|AplicacionTicket\\AplicacionTicket.csproj|solutionrelative:aplicacionticket\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19C7C8CD-9EDD-4F5C-A419-5CF03B7BEDCC}|AplicacionTicket\\AplicacionTicket.csproj|c:\\users\\taruks\\documents\\net core\\aplicacionticket\\aplicacionticket\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19C7C8CD-9EDD-4F5C-A419-5CF03B7BEDCC}|AplicacionTicket\\AplicacionTicket.csproj|solutionrelative:aplicacionticket\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19C7C8CD-9EDD-4F5C-A419-5CF03B7BEDCC}|AplicacionTicket\\AplicacionTicket.csproj|c:\\users\\taruks\\documents\\net core\\aplicacionticket\\aplicacionticket\\models\\tabla_perfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19C7C8CD-9EDD-4F5C-A419-5CF03B7BEDCC}|AplicacionTicket\\AplicacionTicket.csproj|solutionrelative:aplicacionticket\\models\\tabla_perfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19C7C8CD-9EDD-4F5C-A419-5CF03B7BEDCC}|AplicacionTicket\\AplicacionTicket.csproj|c:\\users\\taruks\\documents\\net core\\aplicacionticket\\aplicacionticket\\controllers\\perfilescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19C7C8CD-9EDD-4F5C-A419-5CF03B7BEDCC}|AplicacionTicket\\AplicacionTicket.csproj|solutionrelative:aplicacionticket\\controllers\\perfilescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19C7C8CD-9EDD-4F5C-A419-5CF03B7BEDCC}|AplicacionTicket\\AplicacionTicket.csproj|c:\\users\\taruks\\documents\\net core\\aplicacionticket\\aplicacionticket\\controllers\\negocioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19C7C8CD-9EDD-4F5C-A419-5CF03B7BEDCC}|AplicacionTicket\\AplicacionTicket.csproj|solutionrelative:aplicacionticket\\controllers\\negocioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19C7C8CD-9EDD-4F5C-A419-5CF03B7BEDCC}|AplicacionTicket\\AplicacionTicket.csproj|c:\\users\\taruks\\documents\\net core\\aplicacionticket\\aplicacionticket\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{19C7C8CD-9EDD-4F5C-A419-5CF03B7BEDCC}|AplicacionTicket\\AplicacionTicket.csproj|solutionrelative:aplicacionticket\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PerfilesController.cs",
+              "DocumentMoniker": "C:\\Users\\Taruks\\Documents\\Net Core\\AplicacionTicket\\AplicacionTicket\\Controllers\\PerfilesController.cs",
+              "RelativeDocumentMoniker": "AplicacionTicket\\Controllers\\PerfilesController.cs",
+              "ToolTip": "C:\\Users\\Taruks\\Documents\\Net Core\\AplicacionTicket\\AplicacionTicket\\Controllers\\PerfilesController.cs",
+              "RelativeToolTip": "AplicacionTicket\\Controllers\\PerfilesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T21:57:12.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NegociosController.cs",
+              "DocumentMoniker": "C:\\Users\\Taruks\\Documents\\Net Core\\AplicacionTicket\\AplicacionTicket\\Controllers\\NegociosController.cs",
+              "RelativeDocumentMoniker": "AplicacionTicket\\Controllers\\NegociosController.cs",
+              "ToolTip": "C:\\Users\\Taruks\\Documents\\Net Core\\AplicacionTicket\\AplicacionTicket\\Controllers\\NegociosController.cs",
+              "RelativeToolTip": "AplicacionTicket\\Controllers\\NegociosController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T21:59:14.651Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Tabla_Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Taruks\\Documents\\Net Core\\AplicacionTicket\\AplicacionTicket\\Models\\Tabla_Usuario.cs",
+              "RelativeDocumentMoniker": "AplicacionTicket\\Models\\Tabla_Usuario.cs",
+              "ToolTip": "C:\\Users\\Taruks\\Documents\\Net Core\\AplicacionTicket\\AplicacionTicket\\Models\\Tabla_Usuario.cs",
+              "RelativeToolTip": "AplicacionTicket\\Models\\Tabla_Usuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T21:30:15.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Tabla_Perfil.cs",
+              "DocumentMoniker": "C:\\Users\\Taruks\\Documents\\Net Core\\AplicacionTicket\\AplicacionTicket\\Models\\Tabla_Perfil.cs",
+              "RelativeDocumentMoniker": "AplicacionTicket\\Models\\Tabla_Perfil.cs",
+              "ToolTip": "C:\\Users\\Taruks\\Documents\\Net Core\\AplicacionTicket\\AplicacionTicket\\Models\\Tabla_Perfil.cs",
+              "RelativeToolTip": "AplicacionTicket\\Models\\Tabla_Perfil.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T20:42:02.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Tabla_Negocio.cs",
+              "DocumentMoniker": "C:\\Users\\Taruks\\Documents\\Net Core\\AplicacionTicket\\AplicacionTicket\\Models\\Tabla_Negocio.cs",
+              "RelativeDocumentMoniker": "AplicacionTicket\\Models\\Tabla_Negocio.cs",
+              "ToolTip": "C:\\Users\\Taruks\\Documents\\Net Core\\AplicacionTicket\\AplicacionTicket\\Models\\Tabla_Negocio.cs",
+              "RelativeToolTip": "AplicacionTicket\\Models\\Tabla_Negocio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T20:41:17.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\Taruks\\Documents\\Net Core\\AplicacionTicket\\AplicacionTicket\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "AplicacionTicket\\Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\Taruks\\Documents\\Net Core\\AplicacionTicket\\AplicacionTicket\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "AplicacionTicket\\Controllers\\UsuariosController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAcwBEAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T23:21:44.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Taruks\\Documents\\Net Core\\AplicacionTicket\\AplicacionTicket\\Context\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "AplicacionTicket\\Context\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Taruks\\Documents\\Net Core\\AplicacionTicket\\AplicacionTicket\\Context\\AppDbContext.cs",
+              "RelativeToolTip": "AplicacionTicket\\Context\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T22:31:33.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Taruks\\Documents\\Net Core\\AplicacionTicket\\AplicacionTicket\\appsettings.json",
+              "RelativeDocumentMoniker": "AplicacionTicket\\appsettings.json",
+              "ToolTip": "C:\\Users\\Taruks\\Documents\\Net Core\\AplicacionTicket\\AplicacionTicket\\appsettings.json",
+              "RelativeToolTip": "AplicacionTicket\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-11T20:35:48.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Taruks\\Documents\\Net Core\\AplicacionTicket\\AplicacionTicket\\Program.cs",
+              "RelativeDocumentMoniker": "AplicacionTicket\\Program.cs",
+              "ToolTip": "C:\\Users\\Taruks\\Documents\\Net Core\\AplicacionTicket\\AplicacionTicket\\Program.cs",
+              "RelativeToolTip": "AplicacionTicket\\Program.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAwCkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T20:29:20.009Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

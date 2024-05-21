@@ -1,0 +1,12 @@
+<ng-select [items]="items" bindLabel="descripcion" bindValue="clave" clearAllText="Clear" [searchFn]="customSearchFn"
+    [(ngModel)]="model" (change)="change($event)">
+
+    <ng-template ng-label-tmp let-item="item">
+        <span>{{ item.clave }} {{ item.descripcion }}</span>
+    </ng-template>
+
+    <ng-template ng-option-tmp let-item="item" let-search="searchTerm" let-index="index">
+        <span>{{ item.clave }} {{ item.descripcion }}</span>
+    </ng-template>
+
+</ng-select>

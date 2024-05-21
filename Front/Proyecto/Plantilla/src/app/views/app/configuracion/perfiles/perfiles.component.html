@@ -1,0 +1,106 @@
+<div class="row">
+    <div class="col-12">
+        <h1>Perfiles</h1>
+        <div class="separator mb-5"></div>
+    </div>
+</div>
+<div class="card mb-12">
+    <div class="card-body">
+
+        <app-ctl-menu (Event)="menu($event)"></app-ctl-menu>
+        <app-ctl-table (menuEvent)="menu($event)" (messageEvent)="receiveMessage($event)" [rowData]="rowData"
+            [columnDefs]="columnDefs">
+        </app-ctl-table>
+
+    </div>
+</div>
+
+<div bsModal #lgModal="bs-modal" class="modal fade" tabindex="-1" role="dialog"
+    [config]="{backdrop:'static',keyboard:false}" aria-labelledby="dialog-sizes-name1">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="dialog-sizes-name1" class="modal-title pull-left">Perfil</h2>
+                <button type="button" class="close pull-right" (click)="lgModal.hide()" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <tabset class="card-tabs">
+                    <tab heading="Generales" class="card-body">
+
+                        <div class="form-group has-float-label">
+                            <span for="inputAddress">Nombre</span>
+                            <input type="text" autocomplete="off" class="form-control" name="Nombre"
+                                [(ngModel)]="perfil.Nombre">
+                        </div>
+
+
+                        <div class="form-group  col-md-12">
+                            <div class="custom-control custom-checkbox mb-4">
+                                <input type="checkbox" class="custom-control-input" id="Administrador"
+                                    [(ngModel)]="perfil.EsAdministrador" name="Administrador">
+                                <label class="custom-control-label" for="Administrador">Administrador</label>
+                            </div>
+                        </div>
+
+                    </tab>
+
+                    <tab heading="Menús" class="card-body" *ngIf="!perfil.EsAdministrador">
+
+                        <div class="form-row" *ngFor="let sub of menuItems">
+                            <div *ngIf="sub.idMenu!='sales-start'">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="{{sub.idMenu}}"
+                                        [(ngModel)]="sub.selected" name="{{sub.idMenu}}">
+                                    <label class="custom-control-label" for="{{sub.idMenu}}"><i
+                                            [ngClass]="sub.icono"></i>{{sub.labels}}</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!---   <tabset class="card-tabs">
+                            <tab heading="{{item.labels}}" class="card-body" *ngFor="let item of menuItems">
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-3" *ngFor="let submenu of item.menus">
+
+                                        <div class="custom-control custom-checkbox" *ngIf="!submenu.containSubs">
+                                            <input type="checkbox" class="custom-control-input" id="{{submenu.idMenu}}"
+                                                [(ngModel)]="submenu.selected" name="{{submenu.idMenu}}">
+                                            <label class="custom-control-label" for="{{submenu.idMenu}}"><i
+                                                    [ngClass]="submenu.icono"></i>{{submenu.labels}}</label>
+                                        </div>
+
+
+                                        <span *ngIf="submenu.containSubs" class="badge badge-pill badge-primary mb-1">
+                                            <i [ngClass]="submenu.icono"></i> {{submenu.labels}}</span>
+
+
+                                        <div class="custom-control custom-checkbox" *ngFor="let sub of submenu.menus">
+                                            <input type="checkbox" class="custom-control-input" id="{{sub.idMenu}}"
+                                                [(ngModel)]="sub.selected" name="{{sub.idMenu}}">
+                                            <label class="custom-control-label" for="{{sub.idMenu}}"><i
+                                                    [ngClass]="sub.icono"></i>{{sub.labels}}</label>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+
+
+                            </tab>
+                        </tabset>-->
+                    </tab>
+                </tabset>
+
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" (click)="guardar()">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>

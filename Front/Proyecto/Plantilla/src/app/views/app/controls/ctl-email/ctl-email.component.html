@@ -1,0 +1,48 @@
+<div class="modal-content">
+    <div class="modal-header">
+      <h2 id="dialog-sizes-name2" class="modal-title pull-left">Enviar correo</h2>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="activeModal.close(false)">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+
+      <div class="form-row">
+        <div class="form-group has-float-label col-md-6">
+          <span>Responder a</span>
+          <input type="text" autocomplete="off" class="form-control" name="ResponderA"
+            [(ngModel)]="modelCorreo.ResponderA">
+        </div>
+        <div class="form-group has-float-label col-md-6">
+          <span>Para</span>
+          <input type="text" autocomplete="off" class="form-control" name="Para" [(ngModel)]="modelCorreo.Para">
+        </div>
+      </div>
+
+
+      <div class="form-row">
+        <div class="form-group has-float-label col-md-8">
+          <span>Asunto</span>
+          <input type="text" autocomplete="off" class="form-control" name="Asunto" [(ngModel)]="modelCorreo.Asunto">
+        </div>
+        <div class="form-group has-float-label col-md-4">
+          <span>Adjuntos</span>
+          <input type="text" autocomplete="off" class="form-control" name="Adjuntos" readonly [(ngModel)]="adjuntos">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group has-float-label col-md-12">
+          <span>Mensaje</span>
+          <textarea type="text" class="form-control" name="Mensaje" style="height: 180;"
+            [(ngModel)]="modelCorreo.Mensaje"></textarea>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="modal-footer">
+      <button class="btn btn-primary" (click)="enviarCorreo()">Enviar</button>
+    </div>
+  </div>

@@ -1,0 +1,5 @@
+<div class="has-float-label">
+    <span for="INicio">{{titulo}}</span>
+    <input type="date" class="form-control" name="INicio" [ngModel]="inicio | date:'yyyy-MM-dd'"
+        (ngModelChange)="cambiarInicio($event)">
+</div>
